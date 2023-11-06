@@ -37,7 +37,7 @@
 
 </div>
 
-# CakeMinerSystem
+# CakeMinerProxy
 
 <table>
    <tr>
