@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VERSION="3.7.3"
-DOWNLOAD_HOST="https://github.com/CakeSystem\CakeMinerProxy/raw/main/linux"
+DOWNLOAD_HOST="https://github.com/CakeSystem/CakeMinerProxy/raw/main/linux"
 ORIGIN_EXEC="CakeMinerProxy-${VERSION}"
 
 SERVICE_NAME="CakeMinerProxy"
