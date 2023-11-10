@@ -1,13 +1,13 @@
 #!/bin/bash
 
 VERSION="3.7.3"
-DOWNLOAD_HOST="https://github.com/CakeSystem/CakeSystem/raw/main/linux"
-ORIGIN_EXEC="CakeSystem-${VERSION}"
+DOWNLOAD_HOST="https://github.com/CakeSystem\CakeMinerProxy/raw/main/linux"
+ORIGIN_EXEC="CakeMinerProxy-${VERSION}"
 
-SERVICE_NAME="CakeSystem"
+SERVICE_NAME="CakeMinerProxy"
 
-PATH_CAKE="/root/CakeSystem"
-PATH_EXEC="CakeSystem"
+PATH_CAKE="/root/CakeMinerProxy"
+PATH_EXEC="CakeMinerProxy"
 
 PATH_CONFIG="${PATH_CAKE}/rust-config"
 PATH_NOHUP="${PATH_CAKE}/nohup.out"
@@ -318,7 +318,7 @@ disable_autostart() {
         sudo rm /etc/systemd/system/$SERVICE_NAME.service
         sudo systemctl daemon-reload
     else # 系统使用的是SysVinit
-        sudo sed -i '/\/root\/CakeSystem\/CakeSystem\ &/d' /etc/rc.local
+        sudo sed -i '/\/root\/CakeMinerProxy\/CakeMinerProxy\ &/d' /etc/rc.local
     fi
 }
 
@@ -500,7 +500,7 @@ change_limit() {
 installapp() {
     if [ -n "$1" ]; then
         VERSION="$1"
-        ORIGIN_EXEC="CakeSystem-${1}"
+        ORIGIN_EXEC="CakeMinerProxy-${1}"
     fi
 
     echo $ORIGIN_EXEC

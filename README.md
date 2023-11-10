@@ -30,10 +30,10 @@
 
 
 
-[![CakeSystem][CakeSystem.io-badge]][CakeSystem.io]
+[![CakeMinerProxy][CakeMinerProxy.io-badge]][CakeMinerProxy.io]
 [![Stargazers][stars-shield]][stars-url]
 
-<!-- <a href="https://github.com/CakeSystem/CakeSystem">简体中文</a>｜<a href="https://github.com/CakeSystem/CakeSystem/tree/main/Readme/i18n">English</a> -->
+<!-- <a href="https://github.com/CakeSystem/CakeMinerProxy">简体中文</a>｜<a href="https://github.com/CakeSystem/CakeMinerProxy/tree/main/Readme/i18n">English</a> -->
 
 </div>
 
@@ -50,7 +50,7 @@
    <p>&emsp;&emsp;运行以下shell指令以运行工具包</p>
 
    ```sh
-bash <(curl -s -L https://raw.githubusercontent.com/CakeSystem/CakeSystem/main/install.sh)
+bash <(curl -s -L https://raw.githubusercontent.com/CakeSystem/CakeMinerProxy/main/install.sh)
    ```
    
    <p>&emsp;&emsp;成功运行后，您将看到以下菜单, 根据提示安装即可。</p>
@@ -69,7 +69,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/CakeSystem/CakeSystem/main/i
    <p>&emsp;&emsp;请直接从此项目的Windows目录下载指定的版本：</p>
 
    ```sh
-https://github.com/CakeSystem/CakeSystem/tree/main/windows
+https://github.com/CakeSystem/CakeMinerProxy/tree/main/windows
    ```
 
    <p>&emsp;&emsp;Windows版本直接双击启动即可。</p>
@@ -665,7 +665,7 @@ https://github.com/CakeSystem/CakeSystem/tree/main/windows
 
    <p>&emsp;&emsp;三种方式可以进行端口的导入导出, 此处仅强调EXCEL文件导入, 如需使用Excel导入, 请下载并参照Excel模板文件:</p>
 
-   <p>&emsp;&emsp;<a href="https://github.com/CakeSystem/CakeSystem/raw/main/excel%E7%AB%AF%E5%8F%A3%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx">下载Excel模板</a></p>
+   <p>&emsp;&emsp;<a href="https://github.com/CakeSystem/CakeMinerProxy/raw/main/excel%E7%AB%AF%E5%8F%A3%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx">下载Excel模板</a></p>
 
    </td>
    </tr>
@@ -685,10 +685,10 @@ https://github.com/CakeSystem/CakeSystem/tree/main/windows
 
 
 
-[CakeSystem.io]: https://github.com/CakeSystem/CakeSystem
-[CakeSystem.io-badge]: https://img.shields.io/badge/CakeSystem-v3.6.0-green?logo=Cake
+[CakeMinerProxy.io]: https://github.com/CakeSystem/CakeMinerProxy
+[CakeMinerProxy.io-badge]: https://img.shields.io/badge/CakeMinerProxy-v3.7.3-green?logo=Cake
 [downloads-badge]: https://img.shields.io/github/downloads/ajeetdsouza/zoxide/total?logo=github&logoColor=white&style=flat-square
-[releases]: https://github.com/CakeSystem/CakeSystem/releases
-[stars-url]: https://github.com/CakeSystem/CakeSystem/stargazers
-[stars-shield]: https://img.shields.io/github/stars/CakeSystem/CakeSystem.svg?style=flat
-[stars-url]: https://github.com/CakeSystem/CakeSystem/stargazers
+[releases]: https://github.com/CakeSystem/CakeMinerProxy/releases
+[stars-url]: https://github.com/CakeSystem/CakeMinerProxy/stargazers
+[stars-shield]: https://img.shields.io/github/stars/CakeSystem/CakeMinerProxy.svg?style=flat
+[stars-url]: https://github.com/CakeSystem/CakeMinerProxy/stargazers
