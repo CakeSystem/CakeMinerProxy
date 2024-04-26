@@ -193,6 +193,13 @@ https://github.com/CakeSystem/CakeMinerProxy/tree/main/windows
 ![](https://ghproxy.com/https://raw.githubusercontent.com/Evilgenius-dot/Evilgenius-dot/output/github-contribution-grid-snake.svg)
 
 ```
+   3.9.92已发布
+
+【重要更新】优化了网络波动下导致矿机随机掉线（部分神马阿瓦隆机型会死机）的问题
+端口配置增加替换矿工名
+更新kas>6.5T机型端口
+
+
    3.9.8已发布
    [重要更新] 增加安全访问地址，现在可以通过菜单 - 设置安全访问地址进行设置，设置此项可有效防止后台被扫描，防止爆破
 
