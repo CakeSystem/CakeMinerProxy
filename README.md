@@ -196,6 +196,16 @@ https://github.com/CakeSystem/CakeMinerProxy/tree/main/windows
 ![](https://ghproxy.com/https://raw.githubusercontent.com/Evilgenius-dot/Evilgenius-dot/output/github-contribution-grid-snake.svg)
 
 ```
+
+4.4.6 已发布
+BTC和LTC的抽水算力建议抽到自建节点上，对比传统池子收益提升巨大！
+
+矿池节点增加LTC8挖，且LTC及DOGE收入大幅提升
+(由于LTC矿池节点底层改动，4.4.6与之前版本的LTC数据隔离，升级后接入旧版本LTC所有相关数据将置空，如有旧版在跑的LTC，请及时更新至新版并且重建端口，如需继续跑旧版节点无需升级或回退至4.4.5即可，但是强烈建议升级，收益大幅提升)
+
+矿池节点用户端增加自助返佣查询及配置绑定
+
+
 4.4.5 已发布
 
 开放矿池节点用户端API, API使用教程:
@@ -204,6 +214,7 @@ https://rustminersystem.gitbook.io/rustminersystem/kuang-chi-jie-dian-yong-hu-du
 修复部分场地使用特殊代理工具跑LTC跨抽至VIABTC产生无效的问题, 目前追风L9和福禄旧固件的LTC机型，在某些矿池下跑抽到VIABTC会高拒绝的问题，可以等longpool更新后这部分机型跨池抽至longpool
 
 修复ETC节点延迟探测不到的BUG
+
 
 4.4.4 已发布
 传统代理增加NEX币种
