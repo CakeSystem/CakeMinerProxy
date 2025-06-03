@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="4.4.8"
+VERSION="4.4.9"
 DOWNLOAD_HOST="https://github.com/CakeSystem/CakeMinerProxy/raw/main/linux"
 ORIGIN_EXEC="CakeMinerProxy-${VERSION}"
 
@@ -399,6 +399,7 @@ ISSUE() {
 	echo "4.4.6"
     echo "4.4.7"
     echo "4.4.8"
+	echo "4.4.9"
 }
 
 filterResult() {
