@@ -196,27 +196,38 @@ https://github.com/CakeSystem/CakeMinerProxy/tree/main/windows
 ![](https://ghproxy.com/https://raw.githubusercontent.com/Evilgenius-dot/Evilgenius-dot/output/github-contribution-grid-snake.svg)
 
 ```
+4.5.1 已发布
+
+修复L7、L9在某些网络环境下矿池掉线但机器没掉线导致无法自动重启的BUG（如果使用了cakeminer3, 请一并更新CakeMiner）
+
+增加矿池节点模板功能，后续会陆续热更新模板
+
+Fixed the BUG where the mining pool of L7 and L9 was disconnected but the machine was not, resulting in the inability to automatically restart. (If cakeminer3 was used, please update CakeMiner at the same time.)
+
+Add the function of the mining pool node template, and the templates will be updated in a hot manner successively in the future
+
 4.5.0 已发布
 
-【重磅】增加RMS3协议, 新协议数据体积可压缩1000% - 2000%， 大幅环节网络压力，节约带宽（RMS3将不兼容2和1）。
+【重磅】增加CakeMiner3协议, 新协议数据体积可压缩1000% - 2000%， 大幅环节网络压力，节约带宽（CakeMiner3将不兼容2和1）。
 
 若干BUG修复
 
-【 Breaking News 】 The RMS3 protocol has been added. The new protocol can compress data volume by 1000% to 2000%, significantly reducing network pressure and saving bandwidth (RMS3 will not be compatible with 2 and 1).
+【 Breaking News 】 The CakeMiner3 protocol has been added. The new protocol can compress data volume by 1000% to 2000%, significantly reducing network pressure and saving bandwidth (CakeMiner3 will not be compatible with 2 and 1).
 
 Several BUG fixes
+
 
 4.4.9 已发布
 
 增加矿池节点自助小额提币功能
 (用户端自助提币请在用户端官网 - 设置 - 小额提币处进行自助提币, 新旧版的账单都可提币)
-(管理员端邮箱收益小额自助提币在Rust后台 - 矿池节点 - 自助提币处进行提币)
+(管理员端邮箱收益小额自助提币在CakeMinerProxy后台 - 矿池节点 - 自助提币处进行提币)
 
 修复一处官网LTC费率显示不同步的问题
 
 Add the self-service small-amount withdrawal function for mining pool nodes
 For self-service withdrawals on the user end, please go to the "Settings" - "Small Withdrawals" section on the user end's official website. Both new and old versions of bills can be used for withdrawals.
-The small amount of self-withdrawal from the administrator's email can be made in the Rust backend - Mining Pool node - Self-withdrawal area.
+The small amount of self-withdrawal from the administrator's email can be made in the CakeMinerProxy backend - Mining Pool node - Self-withdrawal area.
 
 Fixed an issue where the LTC rate display on the official website was not synchronized
 
@@ -224,16 +235,13 @@ Fixed an issue where the LTC rate display on the official website was not synchr
 
 矿池节点底层 BTC、LTC 及赠币更新（旧版节点将全面停用）
 (更新前注意下记得删掉旧的 BTC 和 LTC 矿池节点的端口，否则更新后这些端口还会被 占用但是看不到在哪里)
-
 Update of the underlying BTC, LTC and bonus coins of the mining pool nodes (all old version nodes will be completely discontinued)
 Before updating, please remember to delete the ports of the old BTC and LTC mining pool nodes. Otherwise, after the update, these ports will still be occupied but you won't be able to see where they are.
-
 
 4.4.7 已发布
 
 增加 ALEO 冰河端口, 冰河 ALEO 请单独创建ALEO(ICERIVER)币种
 请注意，鱼池的冰河挖矿地址为 aleo.f2pool.com:4440
-
 Add the ALEO Glacier port. For Glacier ALEO, please create the ALEO(ICERIVER) currency separately
 Please note that the glacier mining address of the fishpond is aleo.f2pool.com:4440
 
@@ -245,16 +253,14 @@ BTC和LTC的抽水算力建议抽到自建节点上，对比传统池子收益�
 
 矿池节点用户端增加自助返佣查询及配置绑定
 
-
 4.4.5 已发布
 
 开放矿池节点用户端API, API使用教程:
-https://rustminersystem.gitbook.io/rustminersystem/kuang-chi-jie-dian-yong-hu-duan-api/api-shi-yong-zhu-yi-shi-xiang-bi-du
+https://pool.p2pool.xyz/kuang-chi-jie-dian-yong-hu-duan-api
 
 修复部分场地使用特殊代理工具跑LTC跨抽至VIABTC产生无效的问题, 目前追风L9和福禄旧固件的LTC机型，在某些矿池下跑抽到VIABTC会高拒绝的问题，可以等longpool更新后这部分机型跨池抽至longpool
 
 修复ETC节点延迟探测不到的BUG
-
 
 4.4.4 已发布
 传统代理增加NEX币种
@@ -292,6 +298,7 @@ Complete repair of all models of LTC(including Chifeng and Fulu LTC, Fulu LTC pl
 修复一些机型跨池抽至VIABTC的LTC高拒绝问题
 矿池节点增加KAS
 
+
 4.3.4 已发布
 【重要更新】
 对于已经更新了4.3.2的用户，请务必更新至4.3.4，由于4.3.2的日志在未关闭的情况下发布，矿机接入后会快速将硬盘打爆从而引发操作系统崩溃，请务必更新
@@ -313,11 +320,11 @@ Added kernel information modification to Port configuration
 
 4.3.1 已发布
 
-【重要更新】修复RMS2端口一个潜在被攻击导致内存溢出的风险（如果您的RMS2端口被攻击者攻击，会导致软件瞬间重启）
+【重要更新】修复CakeMiner2端口一个潜在被攻击导致内存溢出的风险（如果您的CakeMiner2端口被攻击者攻击，会导致软件瞬间重启）
 
 4.3.0 已发布
 
-新增RMS2端口协议，配合新的RMS本地客户端，数据体积可压缩百分之30-50
+新增CakeMiner2端口协议，配合新的CakeMiner本地客户端，数据体积可压缩百分之30-50
 
 矿池节点开放所有币种起付额设置
 
@@ -342,10 +349,11 @@ Added kernel information modification to Port configuration
 优化了服务器流量上下行显示不准确的问题
 
 4.1.5 已发布
-修复RMS相关问题，在通过RMS接入大量机器时，跑一段时间服务器会无法接入矿机的问题（RMS同时也更新了1.2.6版本， 使用RMS接入请更新客户端（1.2.6）以及服务端（4.1.5））
+修复CakeMiner相关问题，在通过CakeMiner接入大量机器时，跑一段时间服务器会无法接入矿机的问题（CakeMiner同时也更新了1.2.6版本， 使用CakeMiner接入请更新客户端（1.2.6）以及服务端（4.1.5））
 
-RMS 1.2.6已发布
-修复RMS相关问题，在通过RMS接入大量机器时，跑一段时间服务器会无法接入矿机的问题
+CakeMiner 1.2.6已发布
+修复CakeMiner相关问题，在通过CakeMiner接入大量机器时，跑一段时间服务器会无法接入矿机的问题
+
 
 4.1.4 已发布
 
@@ -373,12 +381,12 @@ RMS 1.2.6已发布
 修复4.1.0和4.1.1多数币种大面积出问题的BUG
 
 4.1.1 正式版已发布
-修复4.1.0RMS掉线问题
+修复4.1.0CakeMiner掉线问题
 
 4.1.0 正式版已发布
 增加兼容模式，在费率配置处配置，ALEO、追风L9请使用此模式
 增加ALEO（请开启兼容模式， 内核抽水请使用替换钱包功能拦截）
-修复了一个导致RMS压缩卡死的BUG
+修复了一个导致CakeMiner压缩卡死的BUG
 
 4.0.0已发布
 传统代理增加FB
@@ -398,7 +406,6 @@ RMS 1.2.6已发布
 所有币种全部应用了上个版本BTC的抗网络波动方式， 整体稳定性大幅提升。
 
 3.9.93已发布
-
 修复上个版本KAS > 6.5T端口无法正常工作的问题
 修复部分小币种特殊机型抽不够的问题
 
@@ -408,16 +415,44 @@ Fix the issue of insufficient drawing for some small currency special models
 Исправление неполадок с портом 6.5T предыдущей версии KAS >
 Исправление недостатков в некоторых специальных моделях небольших валют
 
-
-   3.9.92已发布
+3.9.92已发布
 
 【重要更新】优化了网络波动下导致矿机随机掉线（部分神马阿瓦隆机型会死机）的问题
 端口配置增加替换矿工名
 更新kas>6.5T机型端口
 
+[Important Update] Optimized the issue of mining machines randomly dropping due to network fluctuations (some Shenma Avalon models may crash)
+Add and replace miner names in port configuration
+Update kas>6.5T model ports
+
+« Важное обновление» оптимизирует проблемы, которые приводят к случайным отключениям шахтеров при колебаниях сети (некоторые модели Shenma Avalon умирают)
+Настройка порта Добавить имя шахтера
+Обновление порта Kas > 6.5T
+
+3.9.91已发布
+
+更新了IRON的新算法
+
+Updated IRON's new algorithm
+
+Обновлен новый алгоритм IRON.
+
+
+3.9.9
+[重要更新] 修复了过去几个版本容易掉线的问题（这个问题是由于本地网络波动导致的, 现在不会了）
+
+[重要更新] 增加了一处被cc攻击的防御补丁
+
+[Important update] Fixed the issue of easy disconnections in previous versions (this issue was caused by local network fluctuations and is no longer present)
+[Important update] Added a defense patch for CC attack
+
+[Важное обновление] устраняет проблему, из - за которой предыдущие версии были легко отключены (проблема, вызванная волатильностью локальной сети, теперь не будет)
+[Важное обновление] Добавлен защитный патч, атакованный CC
+
 
    3.9.8已发布
-   [重要更新] 增加安全访问地址，现在可以通过菜单 - 设置安全访问地址进行设置，设置此项可有效防止后台被扫描，防止爆破
+
+   [重要更新]  增加安全访问地址，现在可以通过菜单 - 设置安全访问地址进行设置，设置此项可有效防止后台被扫描，防止爆破
 
    优化ETC 从3.9.3-3.9.7抽不够的问题
 
@@ -480,7 +515,6 @@ Fix the issue of insufficient drawing for some small currency special models
 
    页面细节调整
 
-
    3.9.1已发布
    
    增加BEL
@@ -514,7 +548,7 @@ Fix the issue of insufficient drawing for some small currency special models
    页面诸多细节调整
 
    优化sc算力显示
-   
+
    3.8.2
    增加KLS
 
@@ -541,14 +575,14 @@ Fix the issue of insufficient drawing for some small currency special models
 
    优化了RVN算法相关逻辑
 
-   [RMS 1.0.0] RMS更新
+   [CakeMiner 1.0.0] CakeMiner更新
 
-   开放RMS连接池模式 
+   开放CakeMiner连接池模式 
 
-   [!!!注意：连接池模式需要对应接入的rust服务端版本 >= 3.8.0]
+   [!!!注意：连接池模式需要对应接入的CakeMinerProxy服务端版本 >= 3.8.0]
 
    (
-      如需使用rms公网连接数压缩功能, 请在rms客户端右上角设置里选择切换模式,
+      如需使用CakeMiner公网连接数压缩功能, 请在CakeMiner客户端右上角设置里选择切换模式,
    然后选择连接池, 设置最大连接数。 
 
       以下为压缩率计算公式：
@@ -556,14 +590,15 @@ Fix the issue of insufficient drawing for some small currency special models
       压缩率 = 接入矿机数量 / 最大连接数
 
       压缩率不要太高, 最大连接数设置的越大，硬件负载越小
-      通常3-5倍的压缩率即可, 根据rms所在设备以及服务器硬件情况自行斟酌
+      通常3-5倍的压缩率即可, 根据CakeMiner所在设备以及服务器硬件情况自行斟酌
 
-      此处压缩的是rms至服务器中间的公网tcp数量, 并非简单的矿机合并
+      此处压缩的是CakeMiner至服务器中间的公网tcp数量, 并非简单的矿机合并
    )
 
-   rms 增加密码配置, 右上角设置内可设置rms的访问账号密码
+   CakeMiner 增加密码配置, 右上角设置内可设置CakeMiner的访问账号密码
 
-   rms 增加手动模式, 可自己添加指定rms协议的服务器ip+端口
+   CakeMiner 增加手动模式, 可自己添加指定CakeMiner协议的服务器ip+端口
+   
    
    3.7.3
    增加是否强制下发成功份额开关
@@ -621,7 +656,7 @@ Fix the issue of insufficient drawing for some small currency special models
 
    稳定性提升 优化了极小概率矿池和矿机同时发生不稳定的情况下，导致连接数爆炸的问题
 
-   修复了一个关联rms的小bug，修复编辑Cake端口的时候导致rms矿机半天进不来的问题
+   修复了一个关联CakeMiner的小bug，修复编辑Cake端口的时候导致CakeMiner矿机半天进不来的问题
 
    增加了所有ip访问的日志
 
@@ -633,10 +668,10 @@ Fix the issue of insufficient drawing for some small currency special models
 
    页面细节优化
 
-   [rms更新]
-   更新了rms的安装脚本，更广泛的兼容各种盒子
+   [CakeMiner更新]
+   更新了CakeMiner的安装脚本，更广泛的兼容各种盒子
 
-   rms更新，修复推送地址前如果有代理，如果Cake关闭但是请求没有响应时启动不起来的bug
+   CakeMiner更新，修复推送地址前如果有代理，如果Cake关闭但是请求没有响应时启动不起来的bug
 
    [币种更新]
    增加dnx以及mallob的代理转发
@@ -707,7 +742,7 @@ Fix the issue of insufficient drawing for some small currency special models
    octa、etc等ethash算法币种, 不同协议的矿机币种在同一个端口工作，也可正常统计不同协议的算力了
 
    3.3.0
-   RMS客户端发布
+   CakeMiner客户端发布
 
    修复无法导入配置的bug
 
@@ -745,7 +780,7 @@ Fix the issue of insufficient drawing for some small currency special models
 
    彻底解除跨池抽水限制
 
-   开放了RMS服务的配置
+   开放了CakeMiner服务的配置
 
    优化了抽水的精准度，现在大算力波动的机器也能抽到较为精准的比例了
 
@@ -1041,7 +1076,7 @@ Fix the issue of insufficient drawing for some small currency special models
 
    <p>&emsp;&emsp;三种方式可以进行端口的导入导出, 此处仅强调EXCEL文件导入, 如需使用Excel导入, 请下载并参照Excel模板文件:</p>
 
-   <p>&emsp;&emsp;<a href="https://github.com/CakeSystem/CakeMinerProxy/raw/main/excel%E7%AB%AF%E5%8F%A3%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx">下载Excel模板</a></p>
+   <p>&emsp;&emsp;<a href="https://github.com/CakeSystem/CakeSystem/raw/main/excel%E7%AB%AF%E5%8F%A3%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx">下载Excel模板</a></p>
 
    </td>
    </tr>
