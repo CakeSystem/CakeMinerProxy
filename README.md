@@ -196,6 +196,15 @@ https://github.com/CakeSystem/CakeMinerProxy/tree/main/windows
 ![](https://ghproxy.com/https://raw.githubusercontent.com/Evilgenius-dot/Evilgenius-dot/output/github-contribution-grid-snake.svg)
 
 ```
+4.5.8 已发布
+
+新的BTC矿池节点
+增加矿池APP通信配置
+
+New BTC mining pool nodes
+Increase the communication configuration of the mining pool APP
+
+
 4.5.6 已发布
 
 增加针对指定操作开启二步验证功能
