@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="5.0.0"
+VERSION="6.3.1"
 DOWNLOAD_HOST="https://github.com/CakeSystem/CakeMinerProxy/raw/main/linux"
 ORIGIN_EXEC="CakeMinerProxy-${VERSION}"
 
